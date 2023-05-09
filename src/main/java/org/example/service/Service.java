@@ -34,7 +34,6 @@ public class Service {
         issVelocity = speedCalculator.calculateSpeed(issLocationDAO.loadNthFromEndISSLocation(10),currentLocation);
         currentLocation.setVelocity(issVelocity);
         issLocationDAO.create(currentLocation);
-        System.out.println(currentLocation);
         return currentLocation;
     }
 

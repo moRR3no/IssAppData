@@ -12,7 +12,7 @@ public class SpeedCalculator {
                 location2.getLatitude(), location2.getLongitude());
         double timestampsDifference = (location2.getTimestamp() - location1.getTimestamp());
         double speed_mps = distance/timestampsDifference;
-        System.out.println("timestamp: " + timestampsDifference);
+
         // value in kph
         double speed_kph = (speed_mps*3600.0) / 1000.0;
 
